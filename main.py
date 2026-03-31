@@ -15,4 +15,4 @@ with open("story.txt", "r") as file:
 words=set(words)
 words=list(words)
 words.sort()
-print(words)
+print(words) 
