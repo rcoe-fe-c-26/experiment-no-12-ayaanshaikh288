@@ -5,20 +5,17 @@
 # Coder: mohammed ayaan shaikh 
 # Date: 16/02/26
 
-print("--- Basic Exception Handling ---\n")
-
-try:
- a = float(input("Enter the first number: "))
- b = float(input("Enter the second number: "))
- result = a / b
- print(f"The result of {a} divided by {b} is: {result}")
-except ZeroDivisionError:
-    print("Error: You cannot divide by zero.")
-except ValueError:
-    print("Error: Invalid input. Please enter numeric values.")
-else:  
-    print("Division performed successfully.")
-finally :
-    print("Program execution completed.")
 
 
+#print("--- Extracting Words from Text File ---\n")
+num = int(input("enter word length: "))
+words =[]
+with open("story.txt", "r") as file:
+    content = file.read().split()
+    for i in content:
+        if len(i) == num:
+            words.append(i)
+words=set(words)
+words=list(words)
+words.sort()
+print(words)
