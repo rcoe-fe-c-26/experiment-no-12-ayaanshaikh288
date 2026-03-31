@@ -1,11 +1,8 @@
-# AIM: Write a Python program that takes two 
-# numbers as input and performs division. 
-# Implement exception handling to manage division 
-# by zero and invalid input errors gracefully.
-# Coder: mohammed ayaan shaikh 
-# Date: 16/02/26
-
-
+# AIM: Develop a Python program that reads a text file and 
+# prints words of specified lengths (e.g., three, four, 
+# five, etc.) found within the file.
+# Coder:mohammed ayaan shaikh
+# Date:11/02/26
 
 #print("--- Extracting Words from Text File ---\n")
 num = int(input("enter word length: "))
